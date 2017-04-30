@@ -35,8 +35,8 @@ $(function() {
            allFeeds.forEach(function(feed){
              expect(feed.url).toBeDefined();
              expect(feed.url.length).not.toBe(0);
-           })
-         }
+           });
+         };
 
 
         /* TODO: Write a test that loops through each feed
@@ -47,8 +47,8 @@ $(function() {
            allFeeds.forEach(function(feed){
              expect(feed.name).toBeDefined();
              expect(feed.name.length).not.toBe(0);
-           })
-         }
+           });
+         };
     });
 
 
@@ -64,7 +64,7 @@ $(function() {
          var menuIcon = $('.menu-icon-link');
          it('hidden by default', function() {
            expect(body.className).toContain('menu-hidden');
-         })
+         });
 
          /* TODO: Write a test that ensures the menu changes
           * visibility when the menu icon is clicked. This test
@@ -77,8 +77,8 @@ $(function() {
 
             menuIcon.trigger('click');
             expect(body.className).toContain('menu-hidden');
-          })
-    })
+          });
+    });
 
     /* TODO: Write a new test suite named "Initial Entries" */
     describe('Initial Enteries', function() {
@@ -96,8 +96,8 @@ $(function() {
          it('loadFeed is done', function(done) {
            expect($('.feed').length).toBeGreaterThan(0);
            done();
-         })
-    })
+         });
+    });
 
     /* TODO: Write a new test suite named "New Feed Selection" */
     describe('New Feed Selection', function() {
@@ -124,7 +124,7 @@ $(function() {
              title2 = $('.header-title')[0].innerText;
              expect(title1).not.toEqual(title2);
              done();
-           })
-         })
-    })
+           });
+         });
+    });
 }());
