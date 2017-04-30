@@ -7,12 +7,12 @@ This project is base on the concept of Test-Driven-Development. I use [Jasmine](
 * Download and extract the files
 * Open the index.html file in your web browser
 
-# More tips
+## More tips
 
 * Test suites were written in the file "/jasmine/spec/feedreader.js"
 * The functionality of feedreader app is implemented in "js/app.js"
 
-# License
+## License
 
 no license
 
