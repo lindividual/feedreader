@@ -80,12 +80,12 @@ $(function() {
       });
     });
 
-    it('when new feed is loaded, content actually changes', function() {
-      loadFeed(2, function() {
-        newFeed = $('.feed').html();
+    it('when new feed is loaded, content actually changes', function(done) {
+      loadFeed(1, function() {
+        newFeed = $('.feed').html();  
+        expect(initFeed).not.toEqual(newFeed);
         done();
-      });
-      expect(initFeed).not.toEqual(newFeed);         
+      });       
     });
   });
 }());
